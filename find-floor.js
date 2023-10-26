@@ -7,35 +7,39 @@ function findFloor(sortedArr, val) {
     while(leftIdx <= rightIdx) {
 
         if (leftIdx === sortedArr.length - 1){
+
             return sortedArr[(sortedArr.length -1)]
+
         }
 
         if (rightIdx === 0){
+
             return -1
+
         }
 
         if (leftIdx === rightIdx) {
+
             return sortedArr[(middleIdx)]
+
         }
 
         middleIdx = Math.floor((leftIdx + rightIdx)/2);
         let middleVal = sortedArr[middleIdx]
 
         if(middleVal === val){
-            return middleVal
-        }
-        else if(middleVal > val) {
 
-            console.log(middleIdx)
-            console.log(middleVal)
+            return middleVal
+
+        }
+
+        else if(middleVal > val) {
 
             rightIdx = middleIdx - 1
             
         }
-        else if(middleVal < val) {
 
-            console.log(middleIdx)
-            console.log(middleVal)
+        else if(middleVal < val) {
 
             leftIdx = middleIdx + 1
 
@@ -43,7 +47,6 @@ function findFloor(sortedArr, val) {
 
     }
 
-  
 }
 
 // ANSWER FROM SOLUTIONS NOTES -
