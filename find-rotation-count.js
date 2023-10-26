@@ -1,6 +1,7 @@
 // function findRotationCount() {
 
 //     // I DO NOT EVEN UNDERSTAND THE QUESTION.
+//     // WILL DISCUSS WITH MENTOR
   
 // }
 
