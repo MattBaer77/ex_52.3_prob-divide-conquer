@@ -1,6 +1,5 @@
 function findRotationCount(sortedArr) {
 
-  // JUST WORK ON HALF OF THE ARRAY - ADJUST INDEXES ACCORDINGLY - ESPECIALLY IN WHILE LOOP
   let leftIdx = 0
   let rightIdx = sortedArr.length - 1
 
