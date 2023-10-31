@@ -8,23 +8,16 @@ function findRotationCount(sortedArr) {
 
       let middleIdx = (Math.floor((leftIdx + rightIdx)/2));
 
-      console.log(leftIdx)
-      console.log(rightIdx)
-      console.log(middleIdx)
-
       if(sortedArr[middleIdx] <= sortedArr[leftIdx] && sortedArr[middleIdx] < sortedArr[(middleIdx -1)]) {
 
-        console.log("FOUND!")
         return middleIdx
 
       } else if (sortedArr[middleIdx] < sortedArr[leftIdx]) {
 
-        console.log("MOVE LEFT")
         rightIdx = middleIdx - 1
 
       } else {
 
-        console.log("MOVE RIGHT")
         leftIdx = middleIdx +1;
 
       }
